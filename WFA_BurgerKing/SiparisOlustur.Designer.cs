@@ -28,18 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            groupBoxEkstraMalzemeler = new GroupBox();
             SuspendLayout();
+            // 
+            // groupBoxEkstraMalzemeler
+            // 
+            groupBoxEkstraMalzemeler.AutoSize = true;
+            groupBoxEkstraMalzemeler.Location = new Point(17, 17);
+            groupBoxEkstraMalzemeler.Margin = new Padding(4);
+            groupBoxEkstraMalzemeler.Name = "groupBoxEkstraMalzemeler";
+            groupBoxEkstraMalzemeler.Padding = new Padding(4);
+            groupBoxEkstraMalzemeler.Size = new Size(330, 409);
+            groupBoxEkstraMalzemeler.TabIndex = 0;
+            groupBoxEkstraMalzemeler.TabStop = false;
+            groupBoxEkstraMalzemeler.Text = "Ekstra Malzemeler";
             // 
             // SiparisOlustur
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1158, 739);
+            ClientSize = new Size(360, 439);
+            Controls.Add(groupBoxEkstraMalzemeler);
+            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Margin = new Padding(3, 1, 3, 1);
             Name = "SiparisOlustur";
             Text = "SiparisOlustur";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private GroupBox groupBoxEkstraMalzemeler;
     }
 }
